@@ -1,0 +1,69 @@
+{
+  "store": "CA_1",
+  "products": 3049,
+  "rows": 2586103,
+  "test_window": [
+    "2016-04-25",
+    "2016-05-22"
+  ],
+  "chosen_loss": "tweedie",
+  "backtest_mean": [
+    {
+      "model": "lightgbm (tweedie)",
+      "wape": 0.7434036472045156,
+      "rmsse": 0.7097921009630167,
+      "bias": -0.014046538012407813
+    },
+    {
+      "model": "lightgbm (poisson)",
+      "wape": 0.7459611561359653,
+      "rmsse": 0.7102033017978234,
+      "bias": -0.008443862744970368
+    },
+    {
+      "model": "28-day average",
+      "wape": 0.7482896385468242,
+      "rmsse": 0.7131663932924964,
+      "bias": -0.026255110471733605
+    },
+    {
+      "model": "lightgbm (squared error)",
+      "wape": 0.7524868349896101,
+      "rmsse": 0.7167776971390177,
+      "bias": 0.0008389107983622542
+    },
+    {
+      "model": "same as last week",
+      "wape": 0.8767230750043601,
+      "rmsse": 0.925293675712835,
+      "bias": -0.04349863437164647
+    }
+  ],
+  "test": {
+    "same as last week": {
+      "wape": 0.8680165930524054,
+      "rmsse": 1.0034995114152194,
+      "bias": -0.055568819386415225,
+      "store_total_wape": 0.07181867212057114
+    },
+    "28-day average": {
+      "wape": 0.7478075598151401,
+      "rmsse": 0.7831332847279007,
+      "bias": -0.04533991882535515,
+      "store_total_wape": 0.15130715053121643
+    },
+    "lightgbm (tweedie)": {
+      "wape": 0.7278677267903882,
+      "rmsse": 0.7681986046057235,
+      "bias": -0.06772541983987224,
+      "store_total_wape": 0.06824597742845852
+    }
+  },
+  "demand_patterns": {
+    "intermittent": 2232,
+    "lumpy": 388,
+    "smooth": 356,
+    "erratic": 67,
+    "rarely sold": 6
+  }
+}
